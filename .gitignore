@@ -1,5 +1,6 @@
-
+*.Identifier
 data/*/*/*.txt
+es/elastic_search/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

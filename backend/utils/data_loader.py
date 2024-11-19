@@ -23,7 +23,8 @@ def read_all_problems():
                 with open(file_path, 'r', encoding='utf-8') as f:
                     if ".gitkeep" not in file_path:
                         content = f.read()
-                        problem = Problem(title = file_path,content = content)
+                        problem = Problem(title = file_path[len(data_path):] , 
+                                          content = content)
                         documents.append(problem)
             except Exception as e:
                 print(f"Error reading {file_path}: {e}")
